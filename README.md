@@ -40,3 +40,4 @@ Most of our requests today will be sent to [https://snowtooth.fly.dev](https://s
 - [Error Handling](https://www.apollographql.com/docs/react/data/error-handling)
 - [Next.js App Router w/ Apollo Client](https://www.apollographql.com/docs/react/data/suspense#react-server-components-rsc)
 - [Apollo Client Roadmap](https://github.com/apollographql/apollo-client/blob/main/ROADMAP.md)
+- [Spotify Showcase - Apollo Demo App](https://github.com/apollographql/spotify-showcase)
