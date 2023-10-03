@@ -1,4 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
+import { LoadingSpinner } from "./LoadingSpinner.jsx";
 
 const HOTELS_QUERY = gql`
   query AllHotels {
@@ -13,7 +14,7 @@ const HOTELS_QUERY = gql`
 export function Hotels() {
   const { loading, data } = useQuery(HOTELS_QUERY);
 
-  if (loading) return <p>loading hotels</p>;
+  if (loading) return <LoadingSpinner />;
 
   return (
     <section className="column">

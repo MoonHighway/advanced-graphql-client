@@ -6,7 +6,7 @@ export function App() {
   return (
     <>
       <header>
-        <h1>Snowtooth Mountain - Admin Portal</h1>
+        <h1>Snowtooth Mountain Info</h1>
       </header>
       <section className="container">
         <Events />

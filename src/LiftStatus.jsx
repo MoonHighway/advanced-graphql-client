@@ -1,5 +1,6 @@
 import { gql, useQuery, useMutation } from "@apollo/client";
 import { StatusIndicator } from "./StatusIndicator.jsx";
+import { LoadingSpinner } from "./LoadingSpinner.jsx";
 
 const QUERY = gql`
   query AllLifts {
@@ -30,7 +31,7 @@ export function LiftStatus() {
   const { loading, data } = useQuery(QUERY);
   const [setStatus] = useMutation(MUTATION);
 
-  if (loading) return <p>loading lifts</p>;
+  if (loading) return <LoadingSpinner />;
 
   return (
     <section className="column">

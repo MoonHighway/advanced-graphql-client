@@ -1,4 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
+import { LoadingSpinner } from "./LoadingSpinner.jsx";
 
 const EVENTS_QUERY = gql`
   query AllEvents {
@@ -13,7 +14,7 @@ const EVENTS_QUERY = gql`
 export function Events() {
   const { loading, data } = useQuery(EVENTS_QUERY);
 
-  if (loading) return <p>loading events</p>;
+  if (loading) return <LoadingSpinner />;
 
   return (
     <section className="column">
