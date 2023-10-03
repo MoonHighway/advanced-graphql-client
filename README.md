@@ -20,8 +20,8 @@ Most of our requests today will be sent to [https://snowtooth.fly.dev](https://s
 ## Class Agenda
 
 1. Writing Cross-Platform Queries
-2. Creating Custom Links
-3. Caching & Type Policies
+2. Caching & Type Policies
+3. Creating Custom Links
 4. Persisted Queries
 5. Error Handling Patterns
 6. Suspense
