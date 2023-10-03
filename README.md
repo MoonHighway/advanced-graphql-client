@@ -4,7 +4,7 @@
 
 This repository contains resources for the Advanced Apollo Client workshop at GraphQL Summit 2023. We're glad you're here!
 
-## Instructions
+## Setup Instructions
 
 Download/clone this repo before you come to class, so you don't have to worry about installing dependencies over conference wifi.
 
