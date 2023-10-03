@@ -35,6 +35,7 @@ export function LiftStatus() {
 
   return (
     <section className="column">
+      <h2>Lift Status</h2>
       {data && !loading && (
         <table className="lifts">
           <thead>

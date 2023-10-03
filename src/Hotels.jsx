@@ -18,6 +18,7 @@ export function Hotels() {
 
   return (
     <section className="column">
+      <h2>Local Hotels</h2>
       <ul>
         {data.allHotels.map((hotel) => (
           <li key={hotel.id}>

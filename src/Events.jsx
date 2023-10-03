@@ -18,6 +18,7 @@ export function Events() {
 
   return (
     <section className="column">
+      <h2>Upcoming Events</h2>
       <ul>
         {data.allEvents.map((event) => (
           <li key={event.id}>
