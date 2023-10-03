@@ -1,14 +1,14 @@
-# Advanced Apollo Client Workshop
+# Advanced GraphQL Client Workshop
 
 ## 🗻 GraphQL Summit 2023 🗻
 
-This repository contains resources for the Advanced Apollo Client workshop at GraphQL Summit 2023. We're glad you're here!
+This repository contains resources for the Advanced GraphQL Client workshop at GraphQL Summit 2023. We're glad you're here!
 
 ## Setup Instructions
 
 Download/clone this repo before you come to class, so you don't have to worry about installing dependencies over conference wifi.
 
-1. Download or clone: `https://github.com/moonhighway/advanced-apollo-client.git`.
+1. Download or clone: `https://github.com/moonhighway/advanced-graphql-client.git`.
 2. Navigate to the workshop directory: `cd advanced-apollo-client`.
 3. Install the dependencies: `npm install`.
 4. Start the app: `npm run dev`. This will open your project on `http://localhost:3000`.
