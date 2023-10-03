@@ -1,5 +1,5 @@
 {
-  "name": "advanced-apollo-client",
+  "name": "advanced-graphql-client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@apollo/client": "^3.8.4",
+    "apollo3-cache-persist": "^0.14.1",
     "graphql": "^16.8.1",
+    "graphql-ws": "^5.14.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.8"

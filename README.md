@@ -1,10 +1,10 @@
-# Advanced GraphQL Client Workshop
+# Advanced Apollo Client Workshop
 
 ## 🗻 GraphQL Summit 2023 🗻
 
-This repository contains resources for the Advanced GraphQL Client workshop at GraphQL Summit 2023. We're glad you're here!
+This repository contains resources for the Advanced Apollo Client workshop at GraphQL Summit 2023. We're glad you're here!
 
-## Setup Instructions
+## Instructions
 
 Download/clone this repo before you come to class, so you don't have to worry about installing dependencies over conference wifi.
 
@@ -32,6 +32,11 @@ Most of our requests today will be sent to [https://snowtooth.fly.dev](https://s
 
 - **Eve Porcello**: [Twitter](https://twitter.com/eveporcello) | [Email](mailto:eve@moonhighway.com)
 - **Moon Highway Training**: [Moon Highway Website](https://www.moonhighway.com) | [Mailing List](http://bit.ly/moonhighway) | [Articles](https://www.moonhighway.com/articles)
+
+## Slides
+
+- [Workshop Slides](https://docs.google.com/presentation/d/1OYZoI5wtLqOQq6znVBTLBzkz4Si-2dN8SM32kjLSdsA/edit?usp=sharing)
+- [Defer & Stream](https://slides.com/moonhighway/defer-stream)
 
 ## Resources
 
