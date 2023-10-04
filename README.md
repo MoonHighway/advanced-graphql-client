@@ -1,4 +1,4 @@
-# Advanced Apollo Client Workshop
+# Advanced GraphQL Client Workshop
 
 ## 🗻 GraphQL Summit 2023 🗻
 
