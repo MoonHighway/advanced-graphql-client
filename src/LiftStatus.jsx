@@ -38,6 +38,12 @@ const SUBSCRIPTION = gql`
   }
 `;
 
+// const OPEN_LIFTS = gql`
+//   query OpenLifts {
+//     liftCount(status: HOLD)
+//   }
+// `;
+
 export function LiftStatus() {
   const { loading, data } = useQuery(QUERY);
   const [setStatus] = useMutation(MUTATION);
@@ -48,6 +54,7 @@ export function LiftStatus() {
 
   return (
     <section className="column">
+      {/* <h1>{JSON.stringify(data)} Lifts Open</h1> */}
       <h2>Lift Status</h2>
       {data && !loading && (
         <table className="lifts">

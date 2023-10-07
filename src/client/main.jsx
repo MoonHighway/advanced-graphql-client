@@ -7,6 +7,15 @@ import {
 import { GraphQLWsLink } from "@apollo/client/link/subscriptions";
 import { createClient } from "graphql-ws";
 import { getMainDefinition } from "@apollo/client/utilities";
+import { generatePersistedQueryIdsFromManifest } from "@apollo/persisted-query-lists";
+import { createPersistedQueryLink } from "@apollo/client/link/persisted-queries";
+
+const persistedQueryLink = createPersistedQueryLink(
+  generatePersistedQueryIdsFromManifest({
+    loadManifest: () =>
+      import("../../persisted-query-manifest.json")
+  })
+);
 
 const httpLink = new HttpLink({
   uri: "https://snowtooth.fly.dev"
@@ -29,7 +38,7 @@ const splitLink = split(
 );
 
 const client = new ApolloClient({
-  link: splitLink,
+  link: persistedQueryLink.concat(splitLink),
   cache: new InMemoryCache({
     typePolicies: {
       Hotel: {

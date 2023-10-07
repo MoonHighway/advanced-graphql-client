@@ -1,0 +1,36 @@
+{
+  "format": "apollo-persisted-query-manifest",
+  "version": 1,
+  "operations": [
+    {
+      "id": "3481c901edffd75961aaf97432232d9209063a56abece0a295df1a4f133b0954",
+      "name": "AllEvents",
+      "type": "query",
+      "body": "query AllEvents {\n  allEvents {\n    id\n    title\n    date\n    __typename\n  }\n}"
+    },
+    {
+      "id": "6b94febacfd0ef71a89538e3d8d56a4098ac9a6542040713c42495abcc77f089",
+      "name": "AllHotels",
+      "type": "query",
+      "body": "query AllHotels {\n  allHotels {\n    id\n    name\n    avgCost\n    __typename\n  }\n}"
+    },
+    {
+      "id": "cd53e90e317a97813ed3047ff53aea8692a4ab9557b14bdc984d3fabbba64e95",
+      "name": "AllLifts",
+      "type": "query",
+      "body": "query AllLifts {\n  allLifts {\n    id\n    name\n    status\n    capacity\n    __typename\n  }\n}"
+    },
+    {
+      "id": "8190d4ee46b264acf2b1f92a2689b4160e57ee3314f4cc520452c2d324e2058a",
+      "name": "ListenForStatus",
+      "type": "subscription",
+      "body": "subscription ListenForStatus {\n  liftStatusChange {\n    name\n    id\n    status\n    __typename\n  }\n}"
+    },
+    {
+      "id": "6f6000591353a26867efebb13066983d31799d04a34c690f295bb8f2ab425360",
+      "name": "SetLiftStatus",
+      "type": "mutation",
+      "body": "mutation SetLiftStatus($id: ID!, $status: LiftStatus!) {\n  setLiftStatus(id: $id, status: $status) {\n    id\n    name\n    status\n    __typename\n  }\n}"
+    }
+  ]
+}
