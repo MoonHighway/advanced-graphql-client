@@ -9,10 +9,6 @@ const QUERY = gql`
       name
       status
       capacity
-      trailAccess {
-        id
-        name
-      }
     }
   }
 `;
