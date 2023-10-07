@@ -1,4 +1,9 @@
-import { gql, useQuery, useMutation } from "@apollo/client";
+import {
+  gql,
+  useQuery,
+  useMutation,
+  useSubscription
+} from "@apollo/client";
 import { StatusIndicator } from "./StatusIndicator.jsx";
 import { LoadingSpinner } from "./LoadingSpinner.jsx";
 
@@ -23,9 +28,21 @@ const MUTATION = gql`
   }
 `;
 
+const SUBSCRIPTION = gql`
+  subscription ListenForStatus {
+    liftStatusChange {
+      name
+      id
+      status
+    }
+  }
+`;
+
 export function LiftStatus() {
   const { loading, data } = useQuery(QUERY);
   const [setStatus] = useMutation(MUTATION);
+
+  useSubscription(SUBSCRIPTION);
 
   if (loading) return <LoadingSpinner />;
 
