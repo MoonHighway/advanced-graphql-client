@@ -13,7 +13,8 @@ const HOTELS_QUERY = gql`
 
 export function Hotels() {
   const { loading, data } = useQuery(HOTELS_QUERY, {
-    fetchPolicy: "cache-first"
+    fetchPolicy: "network-only",
+    nextFetchPolicy: "cache-first"
   });
 
   if (loading) return <LoadingSpinner />;

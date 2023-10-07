@@ -14,7 +14,13 @@ const client = new ApolloClient({
     typePolicies: {
       Hotel: {
         keyFields: ["name"],
-        fields: {}
+        fields: {
+          avgCost: {
+            read(avgCost) {
+              return avgCost * 0.25;
+            }
+          }
+        }
       },
       Lift: {
         keyFields: ["name"]
