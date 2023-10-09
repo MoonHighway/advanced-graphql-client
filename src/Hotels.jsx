@@ -1,4 +1,4 @@
-import { gql, useQuery } from "@apollo/client";
+import { gql, useSuspenseQuery } from "@apollo/client";
 import { LoadingSpinner } from "./LoadingSpinner.jsx";
 
 const HOTELS_QUERY = gql`
@@ -12,7 +12,7 @@ const HOTELS_QUERY = gql`
 `;
 
 export function Hotels() {
-  const { loading, data } = useQuery(HOTELS_QUERY, {
+  const { loading, data } = useSuspenseQuery(HOTELS_QUERY, {
     fetchPolicy: "network-only",
     nextFetchPolicy: "cache-first"
   });
