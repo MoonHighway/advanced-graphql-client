@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@apollo/client": "^3.8.4",
+    "@apollo/generate-persisted-query-manifest": "^1.1.0",
+    "@apollo/persisted-query-lists": "^1.0.0",
     "apollo3-cache-persist": "^0.14.1",
     "graphql": "^16.8.1",
     "graphql-ws": "^5.14.1",
