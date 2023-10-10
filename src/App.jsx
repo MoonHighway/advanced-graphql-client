@@ -5,6 +5,14 @@ import { gql, useSuspenseQuery } from "@apollo/client";
 import { Suspense, useState, useTransition } from "react";
 import { LoadingSpinner } from "./LoadingSpinner.jsx";
 
+const LIFT_DETAILS_FIELDS = gql`
+  fragment LiftDetails on Lift {
+    status
+    night
+    capacity
+  }
+`;
+
 const LIFT_QUERY = gql`
   query LiftOfTheWeek($id: ID!) {
     findLiftById(id: $id) {

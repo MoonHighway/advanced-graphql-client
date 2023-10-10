@@ -21,10 +21,16 @@
       "body": "query AllLifts {\n  allLifts {\n    id\n    name\n    status\n    capacity\n    __typename\n  }\n}"
     },
     {
-      "id": "c6009a1df6fb4b04a95459f2a9e151f9c8e1bcf9c8ca2f667c781da750b28bc2",
+      "id": "1b021c16c21029e18e99bebb36959d25c777c40a3c530e1b1a3e8280fdc409dd",
       "name": "LiftOfTheWeek",
       "type": "query",
-      "body": "query LiftOfTheWeek($id: ID!) {\n  findLiftById(id: $id) {\n    id\n    name\n    status\n    __typename\n  }\n}"
+      "body": "query LiftOfTheWeek($id: ID!) {\n  findLiftById(id: $id) {\n    id\n    name\n    ...LiftDetails\n    __typename\n  }\n}\n\nfragment LiftDetails on Lift {\n  status\n  night\n  capacity\n  __typename\n}"
+    },
+    {
+      "id": "cda5394b9d117dd0d4bbda0eaff93242f606e19d19121259c3cdf6a0da4bec6d",
+      "name": "Lifts",
+      "type": "query",
+      "body": "query Lifts {\n  allLifts {\n    id\n    name\n    __typename\n  }\n}"
     },
     {
       "id": "8190d4ee46b264acf2b1f92a2689b4160e57ee3314f4cc520452c2d324e2058a",
